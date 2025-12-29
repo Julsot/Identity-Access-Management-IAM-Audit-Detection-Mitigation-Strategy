@@ -4,7 +4,7 @@ Project Overview > This project documents a high-level security audit performed 
 # Technical Discovery & Traffic Analysis
 Using browser developer tools, I intercepted real-time authentication flows to map the identity lifecycle.
 
-# 1.1 Session Layer - Persistence
+# Session Layer - Persistence
 
 Mechanism: Persistent Session Cookies.
 
@@ -16,7 +16,7 @@ Secure: Verified. Ensures tokens are only transmitted over encrypted (HTTPS) cha
 
 SameSite: Verified SameSite attributes to mitigate Cross-Site Request Forgery (CSRF) risks
 
-# 1.2 Authorization Layer (API Access)
+# Authorization Layer (API Access)
 The platform utilizes a Bearer Token pattern for resource access
 
 Discovery: Identified the use of Opaque Tokens (strings starting with BQ...) instead of standard JWTs for client-side API calls.
