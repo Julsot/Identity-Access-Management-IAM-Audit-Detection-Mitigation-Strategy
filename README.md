@@ -34,7 +34,7 @@ Mitigation: Immediate session invalidation and mandatory MFA re-challenge for th
 
 ### Wazuh Rule Implementation Example
 
-<group name="identity_security,">
+```<group name="identity_security,">
   <rule id="100001" level="10">
     <if_sid>500</if_sid> <field name="http_user_agent">!Mozilla/5.0 (X11; Linux x86_64)</field>
     <description>Alerta Crítica: Posible Session Hijacking. El User-Agent no coincide con la huella digital del usuario original.</description>
@@ -42,7 +42,8 @@ Mitigation: Immediate session invalidation and mandatory MFA re-challenge for th
   </rule>
 </group>
 
-# Incident Response & Mitigation Strategies
+# ```
+Incident Response & Mitigation Strategies
 To handle identified session anomalies, the system implements a tiered response strategy based on the severity of the threat.
 
 # Strategy A: The "Hard Response" (High-Criticality Accounts)
