@@ -40,10 +40,9 @@ Mitigation: Immediate session invalidation and mandatory MFA re-challenge for th
     <description>Alerta Crítica: Posible Session Hijacking. El User-Agent no coincide con la huella digital del usuario original.</description>
     <mitigation>Invalidar Token y forzar Re-auth</mitigation>
   </rule>
-</group>
+</group>```
 
-# ```
-Incident Response & Mitigation Strategies
+# Incident Response & Mitigation Strategies
 To handle identified session anomalies, the system implements a tiered response strategy based on the severity of the threat.
 
 # Strategy A: The "Hard Response" (High-Criticality Accounts)
